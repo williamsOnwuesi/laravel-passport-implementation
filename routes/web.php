@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\PassportController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +19,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::view('register', 'register')->name('register');
+Route::view('login', 'login')->name('login');
+Route::view('dashboard', 'dashboard')->name('dashboard');
+
+Route::get('clients', [PassportController::class, 'view_tokens'])->name('clients'); 
+
+Route::post('login', [AuthenticationController::class, 'login']);
+Route::post('register', [AuthenticationController::class, 'register']);
