@@ -34,10 +34,6 @@
 
     <body style="background: rgba(0, 192, 255)">
 
-            @error('email')
-                <p style="color: red;">{{$message}}</p>
-            @enderror
-
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -47,6 +43,11 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
+                                        
+                                        @error('email')
+                                            <p style="color: red;">{{$message}}</p>
+                                        @enderror
+                                        
                                         <form action="login" method="POST">
 
                                             @csrf
