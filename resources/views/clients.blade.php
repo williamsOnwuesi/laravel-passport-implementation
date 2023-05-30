@@ -94,7 +94,7 @@
 
                 <div class="col-md-4 mb-3">
                     <label for="validationTooltip01">Client Name</label>
-                    <input type="text" name="client_name" class="form-control" id="validationTooltip01" placeholder="John's Iphone" required>
+                    <input type="text" name="name" class="form-control" id="validationTooltip01" placeholder="John's Iphone" required>
                     <div class="valid-tooltip">
                         Looks good!
                     </div>

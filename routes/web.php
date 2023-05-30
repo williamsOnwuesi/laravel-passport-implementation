@@ -25,7 +25,7 @@ Route::view('register', 'register')->name('register');
 Route::view('login', 'login')->name('login');
 Route::view('dashboard', 'dashboard')->name('dashboard');
 
-Route::get('clients', [PassportController::class, 'view_tokens'])->name('clients'); 
+Route::get('clients', [PassportController::class, 'view_tokens'])->middleware('auth')->name('clients'); 
 
 Route::post('login', [AuthenticationController::class, 'login']);
 Route::post('register', [AuthenticationController::class, 'register']);
