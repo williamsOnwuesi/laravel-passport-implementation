@@ -29,7 +29,7 @@
         <button type="submit">Register</button>
         
     </form> -->
-    <section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <section class="h-100 h-custom" style="background-color: grey;">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-lg-8 col-xl-6">
