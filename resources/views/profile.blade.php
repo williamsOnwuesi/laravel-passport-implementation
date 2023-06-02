@@ -183,7 +183,7 @@ body{
                   <hr>
                   <div class="row">
                     <div class="col-sm-12">
-                      <a class="btn btn-info " target="__blank" href="/edit_profile">Edit</a>
+                      <a class="btn btn-info " target="__blank" href="/edit_profile">Edit Profile</a>
                     </div>
                   </div>
                 </div>
